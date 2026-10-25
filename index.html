@@ -6,8 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080b12">
-  <meta name="description" content="Black Pay — каталог цифровых товаров и подписок. LeqVPN, Telegram Stars и Telegram Premium.">
-  <title>Black Pay — цифровые товары</title>
+  <meta name="description" content="BLACK PAY — каталог цифровых товаров и подписок: LeqVPN, Telegram Stars и Telegram Premium.">
+  <title>BLACK PAY — цифровые товары</title>
   <style>
     :root {
       --bg: #080b12;
@@ -31,6 +31,7 @@
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
     }
+
     a { color: inherit; text-decoration: none; }
     button { font: inherit; }
     .wrap { width: min(1120px, 91%); margin: auto; }
@@ -43,6 +44,7 @@
       background: rgba(8,11,18,.82);
       border-bottom: 1px solid var(--line);
     }
+
     .nav {
       min-height: 76px;
       display: flex;
@@ -50,6 +52,7 @@
       justify-content: space-between;
       gap: 20px;
     }
+
     .brand {
       display: flex;
       align-items: center;
@@ -58,6 +61,7 @@
       font-size: 21px;
       letter-spacing: -.7px;
     }
+
     .logo {
       width: 39px;
       height: 39px;
@@ -68,9 +72,18 @@
       box-shadow: 0 5px 24px #2467e644;
       font-weight: 900;
     }
+
     .brand span { color: var(--cyan); }
-    .navlinks { display: flex; align-items: center; gap: 25px; color: var(--muted); font-size: 14px; }
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
     .navlinks a:hover, footer a:hover { color: white; }
+
     .btn {
       display: inline-flex;
       justify-content: center;
@@ -84,16 +97,30 @@
       cursor: pointer;
       transition: .2s ease;
     }
+
     .btn-primary {
       background: linear-gradient(135deg, #4388ff, #2860df);
       color: white;
       box-shadow: 0 8px 25px #2467e62b;
     }
-    .btn-primary:hover { transform: translateY(-2px); filter: brightness(1.1); }
-    .btn-secondary { border-color: var(--line); background: #ffffff06; }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1);
+    }
+
+    .btn-secondary {
+      border-color: var(--line);
+      background: #ffffff06;
+    }
+
     .btn-secondary:hover { background: #ffffff0d; }
 
-    .hero { padding: 94px 0 76px; text-align: center; }
+    .hero {
+      padding: 94px 0 76px;
+      text-align: center;
+    }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -106,9 +133,15 @@
       font-size: 12px;
       font-weight: 750;
       letter-spacing: 1px;
-      text-transform: uppercase;
     }
-    .dot { width: 7px; height: 7px; background: #56e0a0; border-radius: 50%; }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      background: #56e0a0;
+      border-radius: 50%;
+    }
+
     h1 {
       font-size: clamp(42px, 7vw, 76px);
       letter-spacing: -3.5px;
@@ -116,22 +149,71 @@
       margin: 25px auto 20px;
       max-width: 850px;
     }
+
     .gradient {
       background: linear-gradient(100deg, #fff 10%, #91c8ff 53%, #4d88ff 100%);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
-    .hero p { color: var(--muted); max-width: 610px; margin: 0 auto 28px; font-size: 17px; }
-    .hero-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
-    .trust { margin-top: 36px; display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; color: var(--muted); font-size: 12px; }
-    .trust span::before { content: "✓"; color: #61dba5; margin-right: 7px; }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 610px;
+      margin: 0 auto 28px;
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .trust {
+      margin-top: 36px;
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .trust span::before {
+      content: "✓";
+      color: #61dba5;
+      margin-right: 7px;
+    }
 
     section { padding: 54px 0; }
-    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 27px; }
-    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 38px); letter-spacing: -1.2px; }
-    .section-head p { margin: 8px 0 0; color: var(--muted); }
-    .catalog { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 27px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(27px, 4vw, 38px);
+      letter-spacing: -1.2px;
+    }
+
+    .section-head p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
     .card {
       display: flex;
       flex-direction: column;
@@ -144,7 +226,12 @@
       overflow: hidden;
       transition: transform .2s, border-color .2s;
     }
-    .card:hover { transform: translateY(-4px); border-color: #4388ff66; }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #4388ff66;
+    }
+
     .card::before {
       content: "";
       position: absolute;
@@ -155,7 +242,9 @@
       background: #4388ff1b;
       border-radius: 50%;
       filter: blur(12px);
+      pointer-events: none;
     }
+
     .product-icon {
       width: 54px;
       height: 54px;
@@ -167,9 +256,26 @@
       border: 1px solid #4388ff30;
       margin-bottom: 19px;
     }
-    .card h3 { margin: 0; font-size: 21px; letter-spacing: -.5px; }
-    .card .desc { min-height: 68px; color: var(--muted); font-size: 14px; margin: 9px 0 19px; }
-    .items { display: grid; gap: 9px; margin-bottom: 22px; }
+
+    .card h3 {
+      margin: 0;
+      font-size: 21px;
+      letter-spacing: -.5px;
+    }
+
+    .card .desc {
+      min-height: 68px;
+      color: var(--muted);
+      font-size: 14px;
+      margin: 9px 0 19px;
+    }
+
+    .items {
+      display: grid;
+      gap: 9px;
+      margin-bottom: 22px;
+    }
+
     .item {
       display: flex;
       justify-content: space-between;
@@ -181,12 +287,29 @@
       border-radius: 10px;
       font-size: 13px;
     }
+
     .price { font-weight: 800; white-space: nowrap; }
     .card .btn { width: 100%; margin-top: auto; }
-    .note { color: var(--muted); font-size: 12px; margin-top: 14px; }
 
-    .features { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
-    .feature { padding: 21px; border: 1px solid var(--line); background: #ffffff04; border-radius: 17px; }
+    .note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 14px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 16px;
+    }
+
+    .feature {
+      padding: 21px;
+      border: 1px solid var(--line);
+      background: #ffffff04;
+      border-radius: 17px;
+    }
+
     .feature .symbol { font-size: 22px; margin-bottom: 9px; }
     .feature h3 { font-size: 16px; margin: 0 0 6px; }
     .feature p { color: var(--muted); font-size: 13px; margin: 0; }
@@ -201,20 +324,50 @@
       justify-content: space-between;
       gap: 24px;
     }
+
     .support-box h2 { margin: 0 0 8px; font-size: 28px; }
     .support-box p { color: var(--muted); margin: 0; max-width: 600px; }
 
-    .docs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    details { border: 1px solid var(--line); border-radius: 15px; background: #ffffff04; padding: 17px 19px; }
+    .docs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: #ffffff04;
+      padding: 17px 19px;
+    }
+
     summary { cursor: pointer; font-weight: 750; }
     details p, details li { color: var(--muted); font-size: 13px; }
     details ul { padding-left: 19px; }
-    .legal-warning { color: #9eabc0; font-size: 12px; margin-top: 17px; }
 
-    footer { margin-top: 45px; border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 12px; }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .legal-warning {
+      color: #9eabc0;
+      font-size: 12px;
+      margin-top: 17px;
+    }
+
+    footer {
+      margin-top: 45px;
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
     .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
-    .mobile-menu { display: none; }
 
     @media(max-width: 850px) {
       .catalog { grid-template-columns: 1fr; }
@@ -224,6 +377,7 @@
       .navlinks a:not(.btn) { display: none; }
       .section-head { align-items: start; flex-direction: column; }
     }
+
     @media(max-width: 560px) {
       .nav { min-height: 67px; }
       .brand { font-size: 19px; }
@@ -241,7 +395,7 @@
 <body>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#home" aria-label="Black Pay — главная">
+    <a class="brand" href="#home" aria-label="BLACK PAY — главная">
       <div class="logo">B</div>
       BLACK <span>PAY</span>
     </a>
@@ -259,10 +413,10 @@
     <div class="wrap">
       <div class="eyebrow"><span class="dot"></span> Цифровые товары и подписки</div>
       <h1>Твой цифровой мир.<br><span class="gradient">В одном месте.</span></h1>
-      <p>Black Pay — каталог цифровых товаров, VPN-подписок и сервисов Telegram. Выбери нужный продукт и уточни условия покупки.</p>
+      <p>BLACK PAY — каталог цифровых товаров, VPN-подписок и сервисов Telegram. Выбери продукт и перейди к оформлению заказа.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#catalog">Открыть каталог <span>→</span></a>
-        <a class="btn btn-secondary" href="https://t.me/shamaxk" target="_blank" rel="noopener noreferrer">Связаться с поддержкой</a>
+        <a class="btn btn-primary" href="#catalog">Открыть каталог →</a>
+        <a class="btn btn-secondary" href="https://t.me/shamaxk" target="_blank" rel="noopener noreferrer">Связаться с поддержкой ↗</a>
       </div>
       <div class="trust">
         <span>Понятные условия</span>
@@ -292,36 +446,37 @@
             <div class="item"><span>Подписка на 365 дней</span><span class="price">Цена уточняется</span></div>
           </div>
           <a class="btn btn-primary" href="https://t.me/LeqVPN_bot" target="_blank" rel="noopener noreferrer">Перейти в LeqVPN ↗</a>
-          <p class="note">Стоимость и доступность выбранного тарифа необходимо подтвердить перед оплатой.</p>
+          <p class="note">Стоимость и доступность тарифа необходимо подтвердить перед оплатой.</p>
         </article>
 
         <article class="card">
           <div class="product-icon">✦</div>
           <h3>Telegram Stars</h3>
-          <p class="desc">Цифровые звёзды Telegram. Выбери количество и уточни доступность заказа.</p>
+          <p class="desc">Цифровые звёзды Telegram. Выбери количество и перейди к оформлению заказа в боте.</p>
           <div class="items">
             <div class="item"><span>50 Stars</span><span class="price">76 ₽</span></div>
             <div class="item"><span>100 Stars</span><span class="price">152 ₽</span></div>
             <div class="item"><span>500 Stars</span><span class="price">756 ₽</span></div>
           </div>
-          <a class="btn btn-primary" href="https://t.me/shamaxk" target="_blank" rel="noopener noreferrer">Уточнить заказ ↗</a>
-          <p class="note">Цены предварительные. Перед запуском продаж необходимо сверить закупочную стоимость, комиссии и наличие товара.</p>
+          <a class="btn btn-primary" href="https://t.me/BlackStarsMarket2026Bot" target="_blank" rel="noopener noreferrer">Купить в боте ↗</a>
+          <p class="note">Указанные цены предварительные. Перед оплатой подтвердите итоговую стоимость и доступность заказа.</p>
         </article>
 
         <article class="card">
           <div class="product-icon">★</div>
           <h3>Telegram Premium</h3>
-          <p class="desc">Подписка Telegram Premium. Срок, доступность и способ оформления подтверждаются до заказа.</p>
+          <p class="desc">Подписка Telegram Premium. Перейди в бот, чтобы уточнить срок, доступность и условия оформления.</p>
           <div class="items">
             <div class="item"><span>3 месяца</span><span class="price">1 210 ₽</span></div>
             <div class="item"><span>6 месяцев</span><span class="price">1 614 ₽</span></div>
             <div class="item"><span>12 месяцев</span><span class="price">2 926 ₽</span></div>
           </div>
-          <a class="btn btn-primary" href="https://t.me/shamaxk" target="_blank" rel="noopener noreferrer">Уточнить заказ ↗</a>
-          <p class="note">Цены предварительные и должны быть подтверждены перед публикацией и приёмом платежей.</p>
+          <a class="btn btn-primary" href="https://t.me/BlackStarsMarket2026Bot" target="_blank" rel="noopener noreferrer">Купить в боте ↗</a>
+          <p class="note">Указанные цены предварительные. Подтвердите итоговую стоимость и способ получения до оплаты.</p>
         </article>
       </div>
-      <p class="legal-warning">Цены на Stars и Premium рассчитаны предварительно по ориентировочным закупочным ценам с наценкой 25%. Они не являются подтверждением текущих цен поставщика. Заказ считается согласованным после подтверждения итоговой стоимости и условий выдачи.</p>
+
+      <p class="legal-warning">Цены на Stars и Premium предварительные и рассчитаны по ориентировочным закупочным ценам. Они не подтверждают наличие товара или текущую стоимость у поставщика. До начала продаж необходимо проверить цены и условия выдачи.</p>
     </div>
   </section>
 
@@ -358,7 +513,7 @@
       <div class="support-box">
         <div>
           <h2>Нужна помощь?</h2>
-          <p>Уточни наличие товара, итоговую цену, способ получения или задай вопрос по уже оформленному заказу.</p>
+          <p>Уточни наличие товара, итоговую цену, способ получения или задай вопрос по заказу.</p>
         </div>
         <a class="btn btn-primary" href="https://t.me/shamaxk" target="_blank" rel="noopener noreferrer">Написать в поддержку ↗</a>
       </div>
@@ -377,25 +532,25 @@
       <div class="docs">
         <details>
           <summary>Пользовательское соглашение</summary>
-          <p><strong>1. Общие положения.</strong> Сайт Black Pay предназначен для ознакомления с цифровыми товарами и услугами. Отправляя заказ, пользователь подтверждает, что ознакомился с его условиями.</p>
-          <p><strong>2. Стоимость и заказ.</strong> До оплаты покупателю должны быть сообщены окончательная цена, состав заказа, срок предоставления услуги и доступный способ получения. Если сведения на сайте отличаются от подтверждённых условий заказа, оплату следует отложить до уточнения.</p>
+          <p><strong>1. Общие положения.</strong> Сайт BLACK PAY предназначен для ознакомления с цифровыми товарами и услугами. Перед оформлением заказа пользователь должен ознакомиться с его условиями.</p>
+          <p><strong>2. Стоимость и заказ.</strong> До оплаты покупателю сообщаются окончательная цена, состав заказа, срок предоставления услуги и способ получения. Если сведения на сайте отличаются от подтверждённых условий, оплату следует отложить до уточнения.</p>
           <p><strong>3. Предоставление услуги.</strong> Срок и способ выдачи определяются для конкретного товара и сообщаются покупателю до оплаты.</p>
-          <p><strong>4. Возвраты и обращения.</strong> Запросы о возврате, ошибочной оплате или неполученном заказе рассматриваются поддержкой с учётом применимого законодательства и условий платёжного провайдера. Никакие обязательные права потребителя этим текстом не ограничиваются.</p>
+          <p><strong>4. Возвраты и обращения.</strong> Запросы о возврате, ошибочной оплате или неполученном заказе рассматриваются поддержкой с учётом применимого законодательства и условий платёжного провайдера. Обязательные права потребителей сохраняются.</p>
           <p><strong>5. Поддержка.</strong> По вопросам заказа можно написать <a href="https://t.me/shamaxk" target="_blank" rel="noopener noreferrer">@shamaxk</a>.</p>
-          <p><strong>Важно:</strong> этот текст является проектом документа. До начала продаж необходимо указать реальные сведения о продавце, правила возврата и окончательные условия обслуживания.</p>
+          <p><strong>Важно:</strong> до начала продаж необходимо указать реальные сведения о продавце и окончательные условия обслуживания и возврата.</p>
         </details>
 
         <details>
           <summary>Политика конфиденциальности</summary>
           <p><strong>1. Какие данные могут обрабатываться.</strong> При обращении в поддержку или оформлении заказа могут обрабатываться предоставленные пользователем контактные данные, сведения о заказе и информация, необходимая для решения вопроса.</p>
           <p><strong>2. Цели обработки.</strong> Данные используются для ответа на обращения, обработки заказов, предоставления поддержки и выполнения применимых юридических обязанностей.</p>
-          <p><strong>3. Платёжные данные.</strong> Не отправляй данные банковской карты в чат поддержки. При подключении платёжного провайдера обработка платёжных данных должна осуществляться согласно его правилам и опубликованной политике.</p>
+          <p><strong>3. Платёжные данные.</strong> Не отправляй данные банковской карты в чат поддержки. При подключении платёжного провайдера обработка платёжных данных должна соответствовать его правилам.</p>
           <p><strong>4. Защита и хранение.</strong> Доступ к персональным данным должен быть ограничен. Сроки хранения и основания обработки необходимо определить до запуска сервиса.</p>
           <p><strong>5. Обращения по данным.</strong> По вопросам обработки данных можно связаться с поддержкой: <a href="https://t.me/shamaxk" target="_blank" rel="noopener noreferrer">@shamaxk</a>.</p>
-          <p><strong>Важно:</strong> это шаблон. Перед публикацией нужно указать фактического оператора данных, применимые основания и сроки обработки, а также порядок реализации прав пользователей.</p>
+          <p><strong>Важно:</strong> до запуска нужно указать фактического оператора данных, применимые основания и сроки обработки, а также порядок реализации прав пользователей.</p>
         </details>
       </div>
-      <p class="legal-warning">До прохождения модерации заполни юридические сведения о продавце, проверь правила возврата и подтверди цены. Не публикуй эти шаблоны как окончательные документы без проверки применимых требований.</p>
+      <p class="legal-warning">Перед началом продаж заполни юридические сведения о продавце, проверь правила возврата и подтверди цены. Эти шаблоны не заменяют проверку применимых требований.</p>
     </div>
   </section>
 </main>
@@ -403,7 +558,7 @@
 <footer>
   <div class="wrap footer-inner">
     <a class="brand" href="#home"><div class="logo">B</div> BLACK <span>PAY</span></a>
-    <div>© <span id="year"></span> Black Pay</div>
+    <div>© <span id="year"></span> BLACK PAY</div>
     <div class="footer-links">
       <a href="#documents">Документы</a>
       <a href="#support">Поддержка</a>
@@ -411,6 +566,7 @@
     </div>
   </div>
 </footer>
+
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
